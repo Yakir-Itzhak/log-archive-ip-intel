@@ -1,30 +1,20 @@
-# Log Archive & IP Intelligence Tool (Python)
+# Log Archive & IP Intelligence Tool
 
-This is a small Python script that does two things:
+This is a small Python script I wrote for practicing file handling and basic IP analysis.
 
-1. Creates a timestamped archive folder for a log file and copies the log file into it.
-2. Reads the archived log file, finds IPv4 addresses, and separates them into private and public IPs.
+### What it does
+1. You give it a path to a log file.
+2. It creates a new folder with a timestamp + random number.
+3. It copies the log file into that folder.
+4. It scans the archived log for IPv4 addresses.
+5. It separates them into:
+   - private IPs  
+   - public IPs
 
-I wrote it while practicing basic file handling and using the `ipaddress` module.
+### Why I made it
+I wanted to learn how to:
+- automate simple file archiving,
+- extract IP addresses from logs,
+- and use Python's `ipaddress` module.
 
----
-
-## Files
-
-- `log_archive_ip_intel.py` – main script
-
----
-
-## Requirements
-
-- Python 3
-- A text log file that may contain IPv4 addresses (for example, an app log or auth log).
-
----
-
-## How to Run
-
-From the terminal or command prompt:
-
-```bash
-python log_archive_ip_intel.py
+### How to run it
